@@ -1,7 +1,7 @@
 # student name: Marcel Blum
-# matriculation number: 1096233
 # course: Time Series Econometrics
 # study program: International Business and Economics (Master)
+# University of Hohenheim
 
 ### Disclaimer: ###
 # I have used ChatGPT to support the development of this R script, and have used it primarily for debugging purposes.
