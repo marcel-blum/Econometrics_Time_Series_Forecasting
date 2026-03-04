@@ -10,8 +10,8 @@ The project implements four distinct, optimized model architectures:
 4. **Factor-Augmented VAR (FAVAR):** Leveraged Principal Component Analysis (PCA) for dimensionality reduction and HQIC-optimized factor selection.
 
 # Repository Structure
-**`/forecast_functions`**: Contains the production-ready `forecaster` functions. Each script encapsulates the full logic required for the respective forecast stage, optimized for performance and modularity.
-**`/visualizations`**: Contains performance plots and MSFE benchmarks to demonstrate model efficacy.
+- **`/forecast_functions`**: Contains the production-ready `forecaster` functions. Each script encapsulates the full logic required for the respective forecast stage, optimized for performance and modularity.
+- **`/visualizations`**: Contains performance plots and MSFE benchmarks to demonstrate model efficacy.
 
 # Data Availability
 Due to data privacy and non-disclosure agreements regarding the competition datasets, raw data is not provided in this repository. The code is designed to be plug-and-play; if you possess an equivalent macroeconomic dataset with similar structure, the `forecaster` functions will execute as intended.
