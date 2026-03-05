@@ -1,6 +1,7 @@
 # Title: Univariate AR(p) Forecasting Model
 # Author: Marcel Blum
 # Description: Implements AR(p) forecasting for macroeconomic variables.
+#              Used as the second forecasting stage (Forecast 2).
 
 library(lubridate)
 library(forecast)
