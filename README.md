@@ -6,8 +6,7 @@ This directory contains the four production-ready forecasting scripts developed 
 ## Environment & Reproducibility
 This project was developed and tested using **R version 4.4.1**.
 
-* **Dependencies:**
-  All scripts require a standard R environment with the following packages installed:
+* **Dependencies:** All scripts require a standard R environment with the following packages installed:
 
 ```R
 install.packages(c("vars", "forecast", "glmnet", "doParallel", "foreach", "lubridate", "dplyr", "car", "lmtest"))
