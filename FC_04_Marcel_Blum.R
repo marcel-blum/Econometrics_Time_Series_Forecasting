@@ -1,21 +1,20 @@
-# student name: Marcel Blum
-# course: Time Series Econometrics
-# study program: International Business and Economics (Master)
-# University of Hohenheim
+# Title: Factor-Augmented VAR (FAVAR) Forecasting Model
+# Author: Marcel Blum
+# Description: Implements FAVAR forecasting using PCA for dimensionality reduction.
+#              Used as the final forecasting stage (Forecast 4).
 
-### Disclaimer: ###
-# I have used ChatGPT to support the development of this R script, and have used it primarily for debugging purposes.
-# All final decisions regarding model selection, implementation, and interpretation were made independently.
+library(vars)
+library(doParallel)
+library(foreach)
 
-# Note: Please use read.csv and not read.table when reading the raw data file "Data_FC_04.txt".
-# In case the code does not run properly, these are my forecast values:
-# -8.390507  -9.294176  -7.466587 -11.297635
-
-# +++ Code +++ #
+#' Forecast Macroeconomic Variable using FAVAR
+#' 
+#' @param data A data frame containing 'Date', 'gdp', and other variables.
+#' @return A numeric vector of 4-step-ahead forecasts.
+#' @details Performs PCA-based dimensionality reduction, selects factors using 
+#'          HQIC, and performs nested parallel cross-validation to tune 
+#'          window size and lag length for the final VAR model.
 forecaster <- function(data) {
-  library(vars)
-  library(doParallel)
-  library(foreach)
   
   # define parameters
   forecast_horizon <- 4
