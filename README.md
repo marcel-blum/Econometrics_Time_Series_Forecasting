@@ -11,4 +11,5 @@ This project was developed and tested using **R version 4.4.1**.
 
 ```R
 install.packages(c("vars", "forecast", "glmnet", "doParallel", "foreach", "lubridate", "dplyr", "car", "lmtest"))
+
 * **Full Environment Log:** To view a complete snapshot of the development environment (including loaded namespaces), refer to the `session_info.txt` file in the root directory.
