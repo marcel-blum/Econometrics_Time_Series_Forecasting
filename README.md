@@ -11,7 +11,11 @@ The project implements four distinct, optimized model architectures:
 
 # Repository Structure
 - **`/forecast_functions`**: Contains the production-ready `forecaster` functions. Each script encapsulates the full logic required for the respective forecast stage, optimized for performance and modularity.
-- **`/visualizations`**: Contains performance plots and MSFE benchmarks to demonstrate model efficacy.
+- **`/visualizations`**: Contains performance plots and residual diagnostics to demonstrate model efficacy.
+
+## Note on Code Availability
+The focus of this repository is on the econometric methodology and the algorithmic implementation of the forecasting models. As such, these visualizations are provided as final static artifacts to demonstrate model efficacy and diagnostic compliance, rather than as a visualization library. The underlying plotting logic is deliberately excluded to maintain the repository's focus on the forecasting pipeline's architecture and performance metrics.
+All data were visualized using ggplot2. Code can be provided upon request.
 
 # Data Availability
 Due to data privacy and non-disclosure agreements regarding the competition datasets, raw data is not provided in this repository. The code is designed to be plug-and-play; if you possess an equivalent macroeconomic dataset with similar structure, the `forecaster` functions will execute as intended.
