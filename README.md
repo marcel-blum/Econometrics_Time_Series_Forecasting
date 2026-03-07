@@ -1,13 +1,7 @@
-# Forecast Functions API Reference
+## Visualizations
+This directory contains the standardized diagnostic and performance plots for the forecasting models. These visualizations are designed to validate the models' statistical robustness and forecasting performance.
 
-This directory contains the four production-ready forecasting scripts developed for the University of Hohenheim Forecasting Competition. These scripts are designed to be modular and can be integrated into larger econometric pipelines.
-
-
-## Environment & Reproducibility
-This project was developed and tested using **R version 4.4.1**.
-
-* **Full Environment Log:** To view a complete snapshot of the development environment (including loaded namespaces), refer to the `session_info.txt` file in the root directory.
-* **Dependencies:** All scripts require a standard R environment with the following packages installed:
-
-```R
-install.packages(c("vars", "forecast", "glmnet", "doParallel", "foreach", "lubridate", "dplyr", "car", "lmtest"))
+## Interpretation Guide
+* **Forecast Performance:** The red line represents the out-of-sample forecast. The black line represents the historical GDP data. A continuous, smooth transition indicates a stable model fit.
+* **Residual Diagnostics:** The goal is to see the autocorrelation bars staying within the blue dashed confidence intervals (representing white noise). If bars consistently exceed these bounds, it suggests the model may require further adjustment.
+* **AIC Selection:** The model utilizes the minimum AIC value to determine `optimal_p`. This plot provides visual evidence that the lag selection was statistically optimized rather than arbitrary.
