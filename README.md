@@ -1,5 +1,5 @@
 # Econometrics_Time_Series_Forecasting
-This repository contains the **end-to-end forecasting** pipeline developed for a four-stage macroeconomic forecasting competition. The framework demonstrates the progression from foundational univariate econometrics to high-dimensional factor models, specifically optimized for **Mean Squared Forecast Error (MSFE)**.
+This repository contains the **end-to-end forecasting** pipeline developed for a four-stage macroeconomic forecasting competition, where I achieved the **third place**. The framework demonstrates the progression from foundational univariate econometrics to high-dimensional factor models, specifically optimized for **Mean Squared Forecast Error (MSFE)**.
 
 # Technical Methodology
 The project implements four distinct, optimized model architectures:
